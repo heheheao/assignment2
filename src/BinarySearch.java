@@ -49,6 +49,9 @@ public class BinarySearch {
         }
     }
 
+    /**
+     * show result to user
+     */
     public void outPut() {
         if (index != -1) {
             System.out.println("Element is found at index: " + index);
@@ -56,6 +59,7 @@ public class BinarySearch {
             System.out.println("Element is not found!");
         }
     }
+
 
     public static void main(String[] args) {
         int[] arr = {10, 20, 30, 40, 50};
