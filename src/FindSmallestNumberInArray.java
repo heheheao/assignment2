@@ -29,6 +29,9 @@ public class FindSmallestNumberInArray {
         }
     }
 
+    /**
+     * show result to user
+     */
     private void outPut() {
         System.out.println("Smallest: " + min);
     }
