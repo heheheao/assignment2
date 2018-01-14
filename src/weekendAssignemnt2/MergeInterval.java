@@ -5,6 +5,10 @@ import java.util.*;
 public class MergeInterval {
     private List<List<Integer>> intervals;
 
+    /**
+     * take user's input
+     * @param intervals
+     */
     public void input(List<List<Integer>> intervals) {
         if (intervals == null) {
             throw new NullPointerException("can not pass in NULL");
@@ -13,6 +17,9 @@ public class MergeInterval {
         Collections.sort(intervals, (a, b) -> a.get(0) - b.get(0));
     }
 
+    /**
+     * implements logic here
+     */
     public void logic() {
         List<List<Integer>> result = new ArrayList<>();
 
@@ -37,6 +44,9 @@ public class MergeInterval {
         this.intervals = result;
     }
 
+    /**
+     * show out put to user
+     */
     public void outPut() {
         System.out.println(intervals);
     }

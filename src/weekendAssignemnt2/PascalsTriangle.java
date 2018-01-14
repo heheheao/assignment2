@@ -10,10 +10,17 @@ public class PascalsTriangle {
     private int rowNumber;
     private List<List<Integer>> outPut = new ArrayList<>();
 
+    /**
+     * take user's input
+     * @param rowNumber
+     */
     public void input(int rowNumber) {
         this.rowNumber = rowNumber;
     }
 
+    /**
+     * implements logic
+     */
     public void logic() {
         List<Integer> cache = new ArrayList<>();
         for (int i = 0; i < rowNumber; i++) {
@@ -25,6 +32,9 @@ public class PascalsTriangle {
         }
     }
 
+    /**
+     * show result to user
+     */
     public void output() {
         System.out.println(outPut);
     }

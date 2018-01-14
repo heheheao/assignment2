@@ -4,10 +4,17 @@ public class PalindromeString {
     private String mInputString;
     private Boolean mResult = true;
 
+    /**
+     * take user's input
+     * @param source
+     */
     public void input(String source) {
         this.mInputString = source;
     }
 
+    /**
+     * implements logic here
+     */
     public void logic() {
         int left = 0;
         int right = mInputString.length() - 1;
@@ -23,6 +30,9 @@ public class PalindromeString {
         }
     }
 
+    /**
+     * show out put to user
+     */
     public void outPut() {
         if (mResult) {
             System.out.println("the String is Palindrome");

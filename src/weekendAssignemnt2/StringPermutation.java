@@ -7,15 +7,25 @@ public class StringPermutation {
     private String source;
     private List<String> result;
 
+    /**
+     * take user's input
+     * @param source
+     */
     public void input(String source) {
         this.source = source;
         result = new ArrayList<>();
     }
 
+    /**
+     * Implements logic here
+     */
     public void logic() {
         backTracking(source, new StringBuilder());
     }
 
+    /**
+     * show result to user
+     */
     public void outPut() {
         System.out.println(result);
     }

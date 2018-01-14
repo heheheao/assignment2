@@ -6,10 +6,18 @@ public class TwoSun {
     private List<Integer> nums = new ArrayList<>();
     private Set<Integer> set = new HashSet<>();
 
+    /**
+     * add the elements int ot nums
+     * @param i
+     */
     public void add(int i) {
         nums.add(i);
     }
 
+    /**
+     * give a target find a pair of the value in nums equal to target
+     * @param target
+     */
     public void find(int target) {
         if (set.contains(target)) {
             System.out.println("true");
